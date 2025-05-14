@@ -54,4 +54,36 @@ ul {
 body {
   font: var(--text);
   color: var(--text-body);
+  overflow: hidden;
+  background-color: var(--shape-background);
+}
+
+h1,
+h2 {
+  font: var(--text-header);
+  color: var(--text-heading);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.grid {
+  display: grid;
+}
+
+.col-2 {
+  grid-template-columns: 1fr 1fr;
 }

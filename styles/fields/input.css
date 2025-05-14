@@ -1,0 +1,29 @@
+.input-wrapper,
+.textarea-wrapper,
+.radio-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+
+  & label {
+    font: var(--text-xs);
+  }
+}
+
+.input-wrapper,
+.textarea-wrapper {
+  & input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--input-backgroud);
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    color: var(--text-heading);
+
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+  }
+}

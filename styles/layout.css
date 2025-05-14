@@ -1,0 +1,42 @@
+@import url(./fields/form.css);
+@import url(./fields/input.css);
+@import url(./fields/radio.css);
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.25rem;
+  height: 100dvh;
+  padding: 1.25rem;
+}
+
+aside {
+  background: url(../assets/Background.png) center/cover;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  & img {
+    width: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  & .logo {
+    all: unset;
+    font: var(--text-logo);
+    color: var(--pink);
+    margin-bottom: 0.25rem;
+  }
+
+  & p {
+    font: 300 1rem var(--font-family);
+  }
+}
+
+main {
+  overflow: auto;
+  border-radius: 0.5rem;
+  background-color: var(--shape-body);
+  padding: 5rem 8.125rem;
+}

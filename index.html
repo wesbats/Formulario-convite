@@ -13,5 +13,103 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <aside>
+        <img src="./assets/Logo.svg" alt="Logo Festive" />
+        <h1 class="logo">Festive</h1>
+        <p>Crie um convite digital para seu evento</p>
+      </aside>
+      <main>
+        <h1>Crie seu convite</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+          <fieldset class="about-event">
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="ícone calendario" />
+              <span>Sobre o evento</span>
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Nome do evento"
+                required
+              />
+            </div>
+
+            <div class="flex gap-1">
+              <div class="input-wrapper flex-1">
+                <label for="start">Início</label>
+                <input type="datetime-local" id="start" name="start" required />
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="end">Fim</label>
+                <input type="datetime-local" id="end" name="end" required />
+              </div>
+            </div>
+
+            <div class="grid col-2 gap-1">
+              <div class="radio-wrapper">
+                <label>Tipo</label>
+                <div class="radio-container">
+                  <div class="shape"></div>
+                  <div class="radio-inner">
+                    <img
+                      src="./assets/icons/building-2.svg"
+                      alt="icone presencial"
+                    />
+                    <input
+                      type="radio"
+                      name="type"
+                      id="in-person"
+                      value="in-person"
+                      checked
+                    />
+                    <label for="in-person">Presencial</label>
+                  </div>
+                  <div class="radio-inner">
+                    <img
+                      src="./assets/icons/video.svg"
+                      alt="icone presencial"
+                    />
+                    <input
+                      type="radio"
+                      name="type"
+                      id="online"
+                      value="online"
+                    />
+                    <label for="online">Online</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="location">Local</label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="Link ou endereço"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="5"
+                placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
