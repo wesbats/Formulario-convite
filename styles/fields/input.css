@@ -1,29 +1,44 @@
 .input-wrapper,
 .textarea-wrapper,
-.radio-wrapper {
+.radio-wrapper,
+.droparea-wrapper {
   display: flex;
   gap: 0.75rem;
   flex-direction: column;
 
   & label {
-    font: var(--text-xs);
+    font: var(--text-sm);
   }
 }
 
 .input-wrapper,
 .textarea-wrapper {
+  margin-bottom: 1rem;
   & input,
   textarea {
     width: 100%;
-    margin-bottom: 1rem;
     padding: 0.75rem 1rem;
-    background-color: var(--input-backgroud);
+    background-color: var(--input-base);
     border-radius: 0.5rem;
     border: 1px solid var(--input-stroke);
     color: var(--text-heading);
+    font: var(--text);
 
     &::placeholder {
       color: var(--input-placeholder);
+    }
+
+    &:hover {
+      border-color: var(--input-placeholder);
+    }
+
+    &:focus {
+      border-color: var(--brand-light);
+      outline: none;
+    }
+
+    &:user-invalid {
+      border-color: var(--danger);
     }
   }
 }

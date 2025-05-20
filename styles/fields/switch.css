@@ -1,0 +1,46 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 7.625rem;
+  cursor: pointer;
+
+  & label {
+    padding-left: 0.75rem;
+    cursor: pointer;
+  }
+
+  & input[type="checkbox"] {
+    all: unset;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 1.5rem;
+
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.75rem;
+      background-color: var(--text-body);
+      top: 0.25rem;
+      left: 0.25rem;
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:checked::after {
+      background-color: var(--input-stroke);
+      left: 2.25rem;
+    }
+
+    &:checked + .label-container .dark-off {
+      display: none;
+    }
+
+    &:not(:checked) + .label-container .dark-on {
+      display: none;
+    }
+  }
+}

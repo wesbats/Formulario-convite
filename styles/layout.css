@@ -1,6 +1,8 @@
 @import url(./fields/form.css);
 @import url(./fields/input.css);
 @import url(./fields/radio.css);
+@import url(./fields/switch.css);
+@import url(./fields/droparea.css);
 
 #app {
   display: grid;
@@ -39,4 +41,8 @@ main {
   border-radius: 0.5rem;
   background-color: var(--shape-body);
   padding: 5rem 8.125rem;
+}
+
+input[type="datetime-local"] {
+  text-transform: uppercase;
 }

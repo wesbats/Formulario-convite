@@ -20,6 +20,7 @@
   --fuschia: #ff59f9;
   --pink: #ff598b;
   --orange: #ff8b59;
+  --yellow: #ffcd59;
   --lime: #e1ff59;
   --green: #59ff91;
   --cyan: #59fff9;
@@ -68,10 +69,6 @@ h2 {
   display: flex;
 }
 
-.gap-1 {
-  gap: 1rem;
-}
-
 .flex-1 {
   flex: 1;
 }
@@ -86,4 +83,8 @@ h2 {
 
 .col-2 {
   grid-template-columns: 1fr 1fr;
+}
+
+.gap-1 {
+  gap: 1rem;
 }
