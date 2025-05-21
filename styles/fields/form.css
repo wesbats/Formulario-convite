@@ -1,19 +1,31 @@
-fieldset {
-  border: none;
+@import url(./input.css);
+@import url(./radio.css);
+@import url(./switch.css);
+@import url(./droparea.css);
 
-  & legend {
-    margin-bottom: 1.5rem;
-    font: var(--text-header-sm);
+form {
+  & fieldset {
+    border: none;
+
+    & legend {
+      margin-bottom: 1.5rem;
+      font: var(--text-header-sm);
+    }
+
+    & legend:has(img) {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      & img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
   }
 
-  & legend:has(img) {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-
-    & img {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
+  & hr {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
